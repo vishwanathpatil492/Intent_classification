@@ -15,8 +15,8 @@ Before running this application, make sure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd <project-directory>
+git clone https://github.com/vishwanathpatil492/Intent_classification.git
+cd Intent_classification
 ```
 
 ### 2. Backend Setup
@@ -80,9 +80,6 @@ uvicorn app:app --reload
 
 The backend server will start on `http://localhost:8000`
 
-- API documentation will be available at `http://localhost:8000/docs`
-- Alternative documentation at `http://localhost:8000/redoc`
-
 ### 2. Start the Frontend Development Server
 
 In a new terminal, navigate to the frontend directory:
@@ -143,37 +140,3 @@ The backend provides the following endpoints:
    - The backend should be configured to allow requests from the frontend
    - Check that both servers are running on their respective ports
 
-### Environment Variables
-
-If your application uses environment variables, create a `.env` file in the backend directory:
-
-```
-# Example .env file
-MODEL_PATH=./models/
-DATA_PATH=./data/
-DEBUG=True
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Support
-
-If you encounter any issues or have questions, please:
-
-1. Check the troubleshooting section above
-2. Look at existing issues in the repository
-3. Create a new issue with detailed information about the problem
-
----
-
-**Note**: Make sure both backend and frontend servers are running simultaneously for the application to work properly.
